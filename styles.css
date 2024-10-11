@@ -60,6 +60,7 @@ body {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
+    padding: 20px;
 }
 
 .header > div { 
@@ -105,4 +106,18 @@ li {
 
 } */
 
+form { 
+
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    grid-template-rows: 1.5em;
+    gap: 10px;
+}
+
+
+.search input { 
+    border-radius: 16px;
+    background-color: #e5e7eb;
+    border: none;
+}
 
