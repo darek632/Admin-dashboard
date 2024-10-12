@@ -146,7 +146,7 @@ li > button {
 .main { 
     display: grid;
     grid-template-columns: 2.5fr 1fr;
-    padding: 20px 30px 45px 25px;
+    padding: 30px 25px 45px 25px;
     
 }
 
@@ -198,8 +198,54 @@ margin: 0;
 }
 
 .card-buttons { 
-    text-align: right;;
+    text-align: right;
 }
+
+.news-holder, .trend-cards { 
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    border: 1px solid black;
+}
+
+.news-title { 
+    font-weight: bold;
+}
+
+.blog { 
+    display:grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 24px;
+}
+.blog > * {
+    border: 1px solid yellow;
+}
+
+.announcements, .trending { 
+    display: grid;
+    grid-template-rows: 1fr 9fr;
+}
+
+.trending> span, .announcements>span { 
+    
+    border: 1px solid red;
+    font-weight: bold;
+    padding: 0;
+}
+
+.news-holder { 
+    display: grid;
+    padding: 20px;
+    
+}
+
+.news-holder > .news:nth-child(2) { 
+    border-top: 2px solid grey;
+    border-bottom: 2px solid grey;
+}
+
+
+
+
 
 
 
