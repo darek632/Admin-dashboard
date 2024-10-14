@@ -63,6 +63,7 @@ body {
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
     padding: 20px;
+
 }
 
 .header > div { 
@@ -80,14 +81,30 @@ ul {
     display: grid;
     height: 100%;
     /* border: 1px solid green; */
-    grid-template-rows: 1fr;
+    grid-template-rows: 1.5rem;
     grid-template-columns: repeat(3,1fr);
-    
+    align-content: center;
     
 }
 
+.menu { 
+    display: grid;
+  justify-content: center;
+    grid-template-rows:  1.5em;
+    
+}
+
+.bell  {
+    background-size: contain;
+    /* border: 1px solid green; */
+    height: 100%;
+}
+
+/* .menu > ul { 
+    display: grid;
+} */
 li { 
-    border: 1px solid black;
+    /* border: 1px solid black; */
     text-align: center;
 }
 
@@ -112,7 +129,7 @@ li {
 form { 
 
     display: grid;
-    grid-template-columns: 1fr 10fr;
+    grid-template-columns: 0.5fr 10fr;
     grid-template-rows: 1.5em;
     gap: 10px;
 }
@@ -126,11 +143,23 @@ form {
 }
 
 .welcome { 
+
     display: grid;
-   grid-template-columns: 2fr 8fr;
+   grid-template-columns: 1fr 8fr;
    grid-template-rows: 1fr;
    gap: 2px;
+   align-items: center;
    
+}
+
+.that { 
+    display:grid;
+   align-items: center;
+    height: 100%;
+    border: 1px solid black;
+    justify-items: center;
+  
+  
 }
 
 .welcome-small { 
@@ -276,12 +305,57 @@ border: 1px solid black;}
 }
 
 .main-menu > div, .settings > div { 
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display:grid;
     grid-template-columns: 1fr 6fr;
   
 }
 
+.submit { 
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+.mag { 
+    height: 80%;
+    vertical-align: middle;
+}
+
+
+.profile-pic { 
+
+width: 50%;
+height:100%;
+text-align:center;
+background-image:url(images/profile2.jpg);
+background-size: cover;
+background-position: 25% 25%;
+background-repeat: no-repeat;
+border-radius: 50%;
+overflow: hidden; 
+border: none;
+}
+
+
+.bold-name {font-weight: bold;}
+
+.that { 
+    background-image: url(/images/profile2.jpg);
+    width: 50%;
+    height: 100%;
+    background-size: cover;
+    background-position: 25% 25%;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    border: none;
+    display: grid; /* Enable grid on the .that element */
+    place-items: center; /* Centers the content inside the grid */
+}
 
 
 
