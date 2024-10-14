@@ -263,21 +263,28 @@ border: 1px solid black;}
 .dash { 
     display: inline-block;
     border: 1px solid red;
-    vertical-align: middle;
+  
    
 }
 
-.dashimg {
+.dashimg,.home, .profile, .messages, .history, .tasks, .communities, .setting, .support, .privacy {
    height: 100%;
    fill: #FFFFFF;
 }
 
-.dashtxt { 
-    border: 1px solid yellow;
-   display: inline-block;
-  
-   
+.dash { 
+    display:grid;
+    grid-template-columns: 1fr 6fr;
 }
+
+.main-menu > div, .settings > div { 
+    border: 1px solid red;
+    display:grid;
+    grid-template-columns: 1fr 6fr;
+
+}
+
+.main-menu > div > svg { border: 1px solid green;}
 
 
 
