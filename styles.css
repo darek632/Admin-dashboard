@@ -26,7 +26,7 @@ body {
     grid-template-rows: 30px 280px 140px;
     padding-left: 20px;
     gap: 2rem;
-    position: relative;
+    position: relative; /*so the z-index works*/ 
     box-shadow: 5px 0px 10px -4px rgba(10,10,10, 0.2); 
     /* x-axis, y-axis, blur, spread, colour */
     z-index: 1; /* so the box shadow is set over header/main */
@@ -188,7 +188,7 @@ li > button {
     /* border: 1px solid blue; */
 }
 
-.As,.Ps, .projects,.blog { border: 1px solid blue;}
+/* .As,.Ps, .projects,.blog { border: 1px solid blue;} */
 
 
 
@@ -259,7 +259,7 @@ margin: 0;
     width: 80%;
     background-color: #FFFFFF;
     border-radius: 8px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .news:nth-child(2) { 
@@ -349,13 +349,23 @@ border: none;
     width: 50%;
     height: 100%;
     background-size: cover;
-    background-position: 25% 25%;
+    background-position: 50% 25%;
     background-repeat: no-repeat;
     border-radius: 50%;
     border: none;
     display: grid; /* Enable grid on the .that element */
     place-items: center; /* Centers the content inside the grid */
 }
+
+ .card, .announcements, .trending { 
+    box-shadow: 3px 3px 3px 0px #C3CCC6;
+ }
+
+.header {
+    position: relative;
+    z-index: 1;
+    box-shadow: 3px 3px 3px 0px #C3CCC6;
+ }
 
 
 
