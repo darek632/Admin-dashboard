@@ -1,15 +1,21 @@
+@font-face {
+    font-family: myRoboto;
+    src: url(fonts/robert-sans/RobertoSans-Regular.ttf);
+}
+
 body,html {
     margin: 0;
     padding: 0;
 }
 * {
     box-sizing: border-box;
+    
 }
 
 
 body { 
     height: 100vh;
-
+    font-family: myRoboto;
 }
 
 .container { 
@@ -55,6 +61,7 @@ body {
 
 .main { 
     background-color: #e5e7eb; 
+  
 
 }
 
@@ -227,7 +234,7 @@ margin: 0;
     font-size: 14px;
     padding-bottom: 20px;
     padding-right:20px;
-    margin-bottom: 20px;;
+    
 }
 
 .title { 
